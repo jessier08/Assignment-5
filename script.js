@@ -72,10 +72,10 @@ function draw(block, hood){
 		})
 		 .attr('x',function(d){
 		 	//console.log(d)
-            return path.centroid(d)[0]; 
+            return pathGenerator.centroid(d)[0]; 
          })       
          .attr('y',function(d){
-            return path.centroid(d)[1];
+            return pathGenerator.centroid(d)[1];
         })
 }
 
